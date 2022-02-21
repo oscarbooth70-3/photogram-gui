@@ -1,3 +1,10 @@
+  <li>
+    <a href="/users">Users</a>
+  </li>
+  <li>
+    <a href="/photos">Photos</a>
+ </li>
+
 <h1>List of users</h1>
 
 <table border="1">
@@ -25,7 +32,7 @@
       <%= a_user.username %>
       </td>
           
-      <td>
+      <td><a href="/users/<%= a_user.username %>">
       Show details
       </td>
     </td>
