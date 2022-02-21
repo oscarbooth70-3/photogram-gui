@@ -4,7 +4,7 @@
   <li>
     <a href="/photos">Photos</a>
  </li>
- 
+
 <h1><%= @the_user.username %></h1>
 
 <dl>
@@ -50,7 +50,7 @@
     <td><%= a_photo.poster.username %></td>
     <td><%= a_photo.caption %></td>
     <td><%= a_photo.created_at %></td>
-    <td>Show details</td>
+    <td><a href="/photos/<%= a_photo.id %>">Show details</td>
   </tr>
 
   <% end %>
